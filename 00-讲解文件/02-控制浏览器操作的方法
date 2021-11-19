@@ -1,0 +1,16 @@
+selenium库下webdriver模块常用方法
+一、控制浏览器操作方法
+    1、设置浏览器大小：              set_window_size()
+    2、浏览器后退：                  back()
+    3、浏览器前进：                  forward()
+    4、刷新当前页面：                refresh()
+    5、清除文本：                    clear()
+    6、模拟按键输入：                send_keys(value)
+    7、单击元素：                    click()
+    8、提交表单：                    submit()
+    9、获取元素属性值：              get_attribute(name)
+    10、设置该元素是否用户可见：     is_displayed()
+    11、返回元素的尺寸：             size
+    12、获取元素的文本：             text
+    13、关闭单个窗口：               close()
+    14、关闭所有窗口：               quit()

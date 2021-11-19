@@ -1,0 +1,20 @@
+一、selenium提供了8种定位方式：
+    1、id               id定位
+    2、name             name定位
+    3、class_name       类名定位
+    4、tag_name         标签定位
+    5、link_text        完整超链接定位
+    6、partial_link_text        部分链接定位
+    7、xpath            xpath表达式定位
+    8、css_selector     css选择器进行定位
+
+
+ 二、定位元素的格式
+ 1、find_element_by_(后面加你需要添加的定位方式)
+    比如：find_element_by_id
+
+
+ 2、展示定位一个或多个元素的方式，比如：通过id定位
+        定位一个元素：find_element_by_id
+        定位多个元素：find_elements_by_id
+    注：可以看出一个和多个的区别就是，多个元素时，element后面多加一个“s”

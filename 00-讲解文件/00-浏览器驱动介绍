@@ -1,0 +1,22 @@
+第一步：
+    安装 selenium：pip install selenium
+
+
+第二步：
+下载浏览器驱动：
+注：下载之前需要查看当前PC端的浏览器版本，需下载与其一致的版本
+    1、Firefox浏览器驱动：geckodriver： https://github.com/mozilla/geckodriver/releases
+    2、Chrome浏览器驱动：chromedriver ： http://npm.taobao.org/mirrors/chromedriver/
+    3、IE浏览器驱动：IEDriverServer
+    4、Edge浏览器驱动：MicrosoftWebDriver
+    5、Opera浏览器驱动：operadriver
+    6、PhantomJS浏览器驱动：phantomjs
+
+
+一、谷歌浏览器驱动程序下载地址：
+http://npm.taobao.org/mirrors/chromedriver/
+http://chromedriver.storage.googleapis.com/index.html
+
+
+二、火狐浏览器
+https://github.com/mozilla/geckodriver/releases
