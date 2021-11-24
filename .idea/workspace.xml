@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4cf275b-7b03-46ec-9f88-99c3ce266805" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/00-讲解文件/00-浏览器驱动介绍" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00-讲解文件/01-selenium定位" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00-讲解文件/02-控制浏览器操作的方法" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00-讲解文件/03-鼠标事件" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00-讲解文件/04-键盘事件" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00-讲解文件/05-获取断言信息" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00-讲解文件/06-多表单切换" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00-讲解文件/07-多窗口切换" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00-讲解文件/08-警告框处理" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00-讲解文件/09-下拉框选择操作" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00-讲解文件/10-文件上传" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00-讲解文件/11-cookie操作" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00-讲解文件/12-窗口截图" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-google.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/00-讲解文件/03-鼠标事件" beforeDir="false" afterPath="$PROJECT_DIR$/00-讲解文件/03-鼠标事件" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,18 +14,21 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/00-讲解文件/04-键盘事件">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/00-讲解文件/00-浏览器驱动介绍">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/00-讲解文件/05-获取断言信息">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/00-讲解文件/06-多表单切换">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/00-讲解文件/01-selenium定位">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -70,11 +61,20 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/00-讲解文件/02-控制浏览器操作的方法">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+            <state relative-caret-position="285">
+              <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/00-讲解文件/03-鼠标事件">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -89,6 +89,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -101,6 +102,7 @@
         <option value="$PROJECT_DIR$/00-讲解文件/02-定位元素的8种方式" />
         <option value="$PROJECT_DIR$/00-讲解文件/01-selenium定位" />
         <option value="$PROJECT_DIR$/00-讲解文件/02-控制浏览器操作的方法" />
+        <option value="$PROJECT_DIR$/00-讲解文件/03-鼠标事件" />
       </list>
     </option>
   </component>
@@ -114,8 +116,8 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-12" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="850" />
     <option name="width" value="1071" />
     <option name="height" value="1032" />
   </component>
@@ -144,8 +146,9 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -223,15 +226,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="567" y="0" width="714" height="688" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18506752" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34365782" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3285968" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3327338" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -264,13 +267,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/00-讲解文件/01-selenium定位">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/01-google.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
@@ -280,16 +276,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/00-讲解文件/00-浏览器驱动介绍">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/00-讲解文件/03-鼠标事件">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/00-讲解文件/04-键盘事件">
       <provider selected="true" editor-type-id="text-editor" />
@@ -318,10 +304,31 @@
     <entry file="file://$PROJECT_DIR$/00-讲解文件/12-窗口截图">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/00-讲解文件/01-selenium定位">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/00-讲解文件/02-控制浏览器操作的方法">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        <state relative-caret-position="285">
+          <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/00-讲解文件/00-浏览器驱动介绍">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/00-讲解文件/03-鼠标事件">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
