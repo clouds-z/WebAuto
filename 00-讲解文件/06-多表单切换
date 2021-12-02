@@ -1,0 +1,66 @@
+多表单切换：
+1、处理frame/iframe表单嵌套页面的定位问题：switch_to.frame()
+2、将当前定位的主体切换为frame/iframe表单的内嵌页面中
+
+         方法                                                    说明
+    switch_to.frame()                           将当前定位的主体切换为frame/iframe表单的内嵌页面中
+    switch_to.default_content()                 跳回最外层的页面
+
+注：
+1、switch_to.frame() 默认可以直接取表单的id 或name属性。
+2、如果iframe没有可用的id和name属性，则可以通过下面的方式进行定位
+    -----------------------**********-------------------------
+        #先通过xpth定位到iframe
+        xf = driver.find_element_by_xpath('//*[@id="x-URS-iframe"]')
+
+        #再将定位对象传给switch_to.frame()方法
+        driver.switch_to.frame(xf)
+    -----------------------**********-------------------------
+        driver.switch_to.parent_frame()
+
+
+
+
+
+
+
+
+
+
+一、前端页面代码：
+<html>
+  <body>
+    ...
+    <iframe id="x-URS-iframe" ...>
+      <html>
+         <body>
+           ...
+           <input name="email" >
+
+
+二、126邮箱登录框的结构大概是这样子的，想要操作登录框必须要先切换到iframe表单
+
+        from selenium import webdriver
+
+        driver = webdriver.Chrome()
+        driver.get("http://www.126.com")
+
+        driver.switch_to.frame('x-URS-iframe')
+        driver.find_element_by_name("email").clear()
+        driver.find_element_by_name("email").send_keys("username")
+        driver.find_element_by_name("password").clear()
+        driver.find_element_by_name("password").send_keys("password")
+        driver.find_element_by_id("dologin").click()
+        driver.switch_to.default_content()
+
+        driver.quit()
+
+
+
+
+
+
+
+
+
+

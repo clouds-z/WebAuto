@@ -7,7 +7,7 @@ Webdriver中，将关于鼠标操作的方法封装在ActionChains类的提供:
 4、执行动作：
 
 
-代码举例：
+一、代码举例：
 ----------------------**********-----------------------
 from selenium import webdriver
 
@@ -26,18 +26,37 @@ ActionChains(driver).move_to_element(above).perform()
 ----------------------**********-----------------------
 
 
+二、鼠标事情如下：
+----------------------**********-----------------------
 1、构造ActionChains对象：             ActionChains(driver)
 2、点击鼠标左键，不松开：             click_and_hold(on_element=None)
 3、右击：                             context_click(on_element=None)
 4、双击：                             double_click(on_element=None)
-5、拖拽到某个元素后松开：             drag_and_drop(source,target)
+5、拖拽到某个元素后松开：             drag_and_drop(source,target)     Source：鼠标拖动的元素 Target：鼠标释放的目标元素
+    source = driver.find_element_by_id("XX")
+    target = driver.find_element_by_id("XX")
+    ActionChains(driver).drag_and_drop(source , target).perform()
+
 6、拖拽到某个坐标后松开：             drag_and_drop_by_offset(source,xoffset,yoffset)
-7、执行鼠标悬停操作：                 move_to_element(above)
+7、执行鼠标悬停操作：                 move_to_element(above)           to_element：指定元素
 8、按下某个键盘上的键：               key_down(value,element=None)
 9、松开某个键：                       key_up(value,element=None)
 10、鼠标从当前位置移动到某个坐标：    move_by_offset(xoffset,yoffset)
 11、执行所有tionChains中存储的行为，对整个操作的提交： perform()
+12、连续输入框输入内容（在元素t1 t2 t3里连续输入1 2 3）：
+    ac =  ActionChains(driver)
+    t1 = driver.find_element_by_id('t1')
+    t2 = driver.find_element_by_id('t2')
+    t3 = driver.find_element_by_id('t3')
+    ac.click(t1).send_keys('1').click(t2).send_keys('2').click(t2).send_keys('3').perform()
 
+----------------------**********-----------------------
+
+
+注：
+on_element：指被点击的元素，如果该参数为none，将单击当前鼠标所在位置
 
 参考资料
 https://blog.csdn.net/weixin_36279318/article/details/79475388
+
+https://blog.csdn.net/weixin_41918841/article/details/87930317

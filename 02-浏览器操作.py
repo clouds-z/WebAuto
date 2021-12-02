@@ -40,6 +40,8 @@ sleep(3)
 driver.refresh()
 sleep(3)
 
-
+# 清除文本
+driver.find_element_by_id("kw").clear()
+sleep(3)
 
 
