@@ -1,0 +1,75 @@
+1、浏览器滚动条并没有提供相应的操作方法，可以借助JavaScript来控制浏览器的滚动条
+2、WebDriver提供了execute_script()方法来执行JavaScript代码
+
+
+一、用于调整浏览器滚动条位置的JavaScript代码如下：
+    <!-- window.scrollTo(左边距,上边距); -->
+    window.scrollTo(0,450);
+
+
+
+二、window.scrollTo()用于设置浏览器窗口滚动条的水平和垂直位置（第一个参数表示水平的左间距，第二个参数表示垂直的上边距）其代码如下：
+        from selenium import webdriver
+        from time import sleep
+
+        #1.访问百度
+        driver=webdriver.Firefox(executable_path ="F:\GeckoDriver\geckodriver")
+        driver.get("http://www.baidu.com")
+
+        #2.搜索
+        driver.find_element_by_id("kw").send_keys("selenium")
+        driver.find_element_by_id("su").click()
+
+        #3.休眠2s目的是获得服务器的响应内容，如果不使用休眠可能报错
+        sleep(2)
+
+        #4.通过javascript设置浏览器窗口的滚动条位置
+        js="window.scrollTo(100,450);"
+        driver.execute_script(js)
+        sleep(3)
+
+        driver.close()
+
+
+
+三、通过浏览器打开百度进行搜索，并且提前通过set_window_size()方法将浏览器窗口设置为固定宽高显示，
+目的是让窗口出现水平和垂直滚动条。然后通过execute_script()方法执行JavaScripts代码来移动滚动条的位置。
+滚动条上下左右滚动代码演示：
+
+            from selenium import webdriver
+            from time import sleep
+
+            driver=webdriver.Firefox(executable_path ="F:\GeckoDriver\geckodriver")
+            driver.set_window_size(400,400)
+            driver.get("https://www.baidu.com")
+
+            #2.搜索
+            # driver.find_element_by_id("kw").send_keys("selenium")
+            # driver.find_element_by_id("su").click()
+
+            #3.休眠2s目的是获得服务器的响应内容，如果不使用休眠可能报错
+            sleep(10)
+
+
+            #4 滚动左右滚动条---向右
+            js2 = "var q=document.documentElement.scrollLeft=10000"
+            driver.execute_script(js2)
+            sleep(15)
+
+            #5 滚动左右滚动条---向左
+            js3 = "var q=document.documentElement.scrollLeft=0"
+            driver.execute_script(js3)
+            sleep(15)
+
+            #6 拖动到滚动条底部---向下
+            js = "var q=document.documentElement.scrollTop=10000"
+            driver.execute_script(js)
+            sleep(15)
+
+            #7 拖动到滚动条底部---向上
+            js = "var q=document.documentElement.scrollTop=0"
+            driver.execute_script(js)
+            sleep(15)
+
+            driver.close()
+
