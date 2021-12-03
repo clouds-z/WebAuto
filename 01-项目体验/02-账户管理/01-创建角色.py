@@ -6,11 +6,8 @@ purpose : 对公司的后端系统进行操作
 """
 
 
-# 导入selenium的webdriver模块
 from selenium import webdriver
-# 导入time的sleep模块
 from time import sleep
-# 导入鼠标事件
 from selenium.webdriver.common.action_chains import ActionChains
 
 
@@ -58,5 +55,34 @@ sleep(1)
 
 # 4、进入“角色列表”模块创建角色
 tester.find_element_by_xpath('//*[@id="popContainer"]/section/aside/div/ul/li[6]/ul/li[2]/a').click()
-tester.find_element_by_class_name('ant-btn ant-btn-primary').click()
+sleep(2)
+tester.find_element_by_xpath('//*[@id="popContainer"]/section/section/main/div/div/div/\
+div/div/div/div/div[2]/div[1]/div/div[2]/button').click()
+sleep(2)
+
+# 5、输入“角色名”
+tester.find_element_by_xpath('//*[@id="name"]').send_keys('小蓝鲸运营管理员')
+sleep(1)
+
+# 6、输入“角色描述”
+tester.find_element_by_id('description').send_keys(u'用于管理设备、地图及任务的查看')
+
+# 7、选中“设备管理、地图管理、任务管理”
+tester.find_element_by_xpath('/html/body/div[1]/section/section/main/div/div/div/div/div/\
+div/div/div/div/form/div[3]/div[2]/div/span/div/ul/li[2]/span[2]').click()
+tester.find_element_by_xpath('/html/body/div[1]/section/section/main/div/div/div/div/div/div/div/\
+div/div/form/div[3]/div[2]/div/span/div/ul/li[3]/span[2]').click()
+tester.find_element_by_xpath('/html/body/div[1]/section/section/main/div/div/div/div/div/div/div/\
+div/div/form/div[3]/div[2]/div/span/div/ul/li[4]/span[2]').click()
+sleep(1)
+
+# 8、点击“确定”按钮
+# tester.find_element_by_xpath('/html/body/div[1]/section/section/main/div/div/div/div/\
+# div/div/div/div/div/div/span/button[2]')
+# sleep(1)
+
+
+
+
+
 
